@@ -26,7 +26,7 @@ CHROMA_CLIENT = chromadb.PersistentClient(path="docs_db")
 COLLECTION = CHROMA_CLIENT.get_or_create_collection(name="doc_chunks")
 
 # Gemini API key (replace with your key or use Colab secret)
-GEN_API_KEY = "AIzaSyAPteCJMtCZBCP4QJbfmfksFk3yEoG1Dt0"
+GEN_API_KEY = "GEMINI_API_KEY"
 genai.configure(api_key=GEN_API_KEY)
 GEMINI_MODEL = genai.GenerativeModel("gemini-2.5-flash")
 
